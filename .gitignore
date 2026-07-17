@@ -1,0 +1,21 @@
+# Secret — never commit your API key.
+# (If you ZIP the folder directly instead of using git, this file WILL be
+#  included; that's fine for your own work machine, but don't put the zip or
+#  this repo anywhere public with a real key inside.)
+config.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs / temp
+data/*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# NOTE: data/cache.sqlite, data/dashboard_data.json and index.html are
+# intentionally NOT ignored. Shipping them means the target machine reuses the
+# immutable cache (climate normals + past NDVI) for a fast first run, and can
+# open a working dashboard immediately before its own first refresh.

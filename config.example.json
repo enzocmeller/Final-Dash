@@ -1,0 +1,36 @@
+{
+  "_comment": "Copy this file to config.json and paste your free USDA NASS key below. Get one in ~1 min at https://quickstats.nass.usda.gov/api (it is emailed instantly). config.json is gitignored so your key never leaves your machine.",
+
+  "nass_api_key": "PASTE_YOUR_USDA_NASS_KEY_HERE",
+
+  "_comment_ams": "OPTIONAL. USDA AMS Market News (MARS API) key for the live cash-bid + basis panel. Free: register at https://mymarketnews.ams.usda.gov, then copy the key from 'My Profile'. Leave blank to skip the AMS panel. Build machine must also reach marsapi.ams.usda.gov.",
+  "ams_api_key": "",
+
+  "states": "all",
+
+  "yield_start_year": 1990,
+  "condition_history_years": 12,
+
+  "ndvi_product": "vnp09h1-ndvi",
+  "ndvi_season_start_month": 4,
+  "ndvi_baseline_years": 5,
+  "ndvi_evolution_years": 3,
+  "ndvi_max_composites": 24,
+
+  "_comment_yield_seed": "Pre-August US-yield anchor (bu/ac) from the latest WASDE trend yield; every state's 2026 estimate ties to it. Ignored automatically once USDA NASS publishes a national yield for the crop (~Aug 12). Update this to the newest WASDE trend before August.",
+  "usda_us_yield_seed": 183.0,
+
+  "gdd_start_month": 1,
+  "gdd_evolution_years": 3,
+  "regression_start_year": 2008,
+
+  "top_counties_for_centroid": 15,
+  "corn_sample_points": 3,
+  "corn_weight_by": "area",
+
+  "request_delay_seconds": 0.3,
+  "request_timeout_seconds": 90,
+  "request_retries": 6,
+
+  "ca_bundle": ""
+}
